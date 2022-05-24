@@ -71,16 +71,17 @@ export default {
         linkedIn: "https://www.linkedin.com/in/glenn-p-perez/",
         resume: "https://drive.google.com/file/d/1uhZ40S4Zn2uMLoEMUaEeos5nnojKk_J8/view?usp=sharing",
         gitHub: "https://github.com/singleparadox/"
-      }
+      },
 
+      NUMBER_OF_SHIFT: 2,
+      ENCRYPTED_EMAIL: "ingppocvvjgyargtg|Bjqvockn0eqo",
     }
   },
   methods: {
     getEmail() {
-      const encryptedEmail = "ingppocvvjgyargtg|Bjqvockn0eqo";
-      const decryptedEmail = encryptedEmail
+      const decryptedEmail = this.ENCRYPTED_EMAIL
                             .split("")
-                            .map(v => String.fromCharCode(v.charCodeAt(0) - 2))
+                            .map(v => String.fromCharCode(v.charCodeAt(0) - this.NUMBER_OF_SHIFT))
                             .join("");
 
       window.open("mailto:" + decryptedEmail, '_blank');
