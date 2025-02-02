@@ -19,7 +19,7 @@
             <v-list-item-subtitle class="text-center">I'm a Software Developer</v-list-item-subtitle>
             <v-list-item-subtitle
               class="text-center"
-            >I am proficient in JavaScript (ES6), Python 3, and PHP 7</v-list-item-subtitle>
+            >I am proficient in JavaScript (ES2020), Python 3.11+, and PHP 8+</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
 
